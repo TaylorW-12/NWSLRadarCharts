@@ -78,7 +78,7 @@ new_df_4["Player"] = player_name
 print(new_df_4.head())
 
 #Sydney Leroux
-df_5=pd.read_excel('Sydney_Leroux_data.xlsx',engine='openpyxl')
+df_5=pd.read_excel('sydney_leroux_data.xlsx',engine='openpyxl')
 df_5=df_5.drop('Standard Stats_Percentile', axis=1)
 df_5_transposed= df_5.transpose() # Set the first row as column titles 
 df_5_transposed.columns = df_5_transposed.iloc[0] 
